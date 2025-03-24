@@ -14,7 +14,6 @@ class class_password extends MySQL {
 
     public function AggiornaPassword($user = null, $password = null, $domandaChiave = null, $tipo = null, $idPersonale = null, $cancella = null) {
 
-        
         $gestionePass['idAzienda'] = MySQL::SQLValue($_SESSION['idAzienda'], MySQL::SQLVALUE_TEXT);
         $gestionePass['idOperatore'] = MySQL::SQLValue($_SESSION['idAmministratore'], MySQL::SQLVALUE_TEXT);
         $gestionePass['tipo'] = MySQL::SQLValue($tipo, MySQL::SQLVALUE_TEXT);
